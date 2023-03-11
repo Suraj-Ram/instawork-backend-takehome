@@ -61,7 +61,8 @@ curl -X POST -H "Content-Type:application/json" localhost:3000/users -d '{
 
 ## Editing User
 **Request:**
-Structure:
+
+General Structure:
 ```
 curl -X PUT -H "Content-Type:application/json" localhost:3000/users/<id> -d '{...data to edit...}'
 ```
@@ -81,7 +82,8 @@ curl -X PUT -H "Content-Type:application/json" localhost:3000/users/3 -d '{
 
 ## Deleting User
 **Request:**
-Structure:
+
+General Structure:
 ```
 curl -X DELETE -H "Content-Type:application/json" localhost:3000/users/<id>
 ```
