@@ -41,7 +41,7 @@ curl -X GET localhost:3000/users
 [{"id":1,"firstName":"Suraj","lastName":"Ramchandran","phone":"8572778814","email":"ramchandran.s@northeastern.edu","role":"ADMIN"},{"id":2,"firstName":"Bob","lastName":"Rogers","phone":"7298374989","email":"rogers.b@gmail.com","role":"REGULAR"},{"id":3,"firstName":"Dave","lastName":"Brown","phone":"6173737000","email":"dave.br@outlook.com","role":"REGULAR"}]
 ```
 
-## Adding User
+## Adding a User
 **Request:**
 ```
 curl -X POST -H "Content-Type:application/json" localhost:3000/users -d '{ 
@@ -59,7 +59,7 @@ curl -X POST -H "Content-Type:application/json" localhost:3000/users -d '{
 
 `404` error will be returned if email already exists, all fields are not given or they are in the wrong type.
 
-## Editing User
+## Editing a User
 **Request:**
 
 General Structure:
@@ -80,7 +80,7 @@ curl -X PUT -H "Content-Type:application/json" localhost:3000/users/3 -d '{
 
 `404` error will be returned if requested user ID does not exist.
 
-## Deleting User
+## Deleting a User
 **Request:**
 
 General Structure:
