@@ -36,6 +36,7 @@ curl -X GET localhost:3000/users
 ```
 **Response:**
 ```
+[{"id":1,"firstName":"Suraj","lastName":"Ramchandran","phone":"8572778814","email":"ramchandran.s@northeastern.edu","role":"ADMIN"},{"id":2,"firstName":"Bob","lastName":"Rogers","phone":"7298374989","email":"rogers.b@gmail.com","role":"REGULAR"},{"id":3,"firstName":"Dave","lastName":"Brown","phone":"6173737000","email":"dave.br@outlook.com","role":"REGULAR"}]
 ```
 
 ## Adding User
@@ -53,6 +54,8 @@ curl -X POST -H "Content-Type:application/json" localhost:3000/users -d '{
 ```
 {"id":10,"firstName":"John","lastName":"Doe","phone":"8572778814","email":"rs@northeastern.com","role":"ADMIN"}
 ```
+
+`404` error will be returned if email already exists, all fields are not given or they are in the wrong type.
 
 ## Editing User
 **Request:**
@@ -72,6 +75,8 @@ curl -X PUT -H "Content-Type:application/json" localhost:3000/users/3 -d '{
 {"id":3,"firstName":"Dave","lastName":"Brown","phone":"8572778815","email":"brown.dave@northeastern.com","role":"REGULAR"}
 ```
 
+`404` error will be returned if requested user ID does not exist.
+
 ## Deleting User
 **Request:**
 Structure:
@@ -83,3 +88,4 @@ Example:
 curl -X DELETE -H "Content-Type:application/json" localhost:3000/users/2
 ```
 
+`404` error will be returned if requested user ID does not exist.
