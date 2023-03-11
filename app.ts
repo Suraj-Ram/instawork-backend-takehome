@@ -81,8 +81,6 @@ app.put("/users/:id", async (req: Request, res: Response) => {
 	}
 });
 
-// Deleting a Team Member
-
 /**
  * Delete the team member with the given ID (as a query parameter).
  *
