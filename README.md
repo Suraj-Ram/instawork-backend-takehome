@@ -1,6 +1,8 @@
 # Instawork Backend Take-home Assignment
 Suraj Ramchandran
 
+I developed this API in NodeJS using Express and Prisma.
+
 # Setup and Installation
 
 Docker is needed to run the MySQL database.
